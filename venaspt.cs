@@ -1,25 +1,24 @@
 ﻿using System;
 
-  namespace ComputeAverageApp
+  namespace MathApp
  {
     
-     class CompleteAverageProgram
+     class MathProgram
      {
 
         static void Main(string[] args)
         {
+            double num1= -20;
+            double num2=15.75;
+            double num3=10;
+            double num4=2;
+            double num5=144;
 
-            Console.WriteLine("Enter The 5 Grades");
-
-            double grade1 = Convert.ToDouble(Console.ReadLine());
-            double grade2 = Convert.ToDouble(Console.ReadLine());
-            double grade3 = Convert.ToDouble(Console.ReadLine());
-            double grade4 = Convert.ToDouble(Console.ReadLine());
-            double grade5 = Convert.ToDouble(Console.ReadLine());
-
-            double average = grade1 + grade2 + grade2 + grade3 + grade3 + grade4 + grade5 / 5;
-
-            Console.WriteLine("The average is " + average + " and round it off " + average);
+            Console.WriteLine("Absoulute Value of -20 is:" + Math.Abs(num1));
+            Console.WriteLine("Higher Value between 15.75 and 10 is: " + Math.Max(num2, num3));
+            Console.WriteLine("2 to the power of 3 is:" + Math.Pow(num4, 3));
+            Console.WriteLine("Square root of 144 is: " + Math.Sqrt(num5));
+            Console.WriteLine("Ceiling value of 5.75 is " + Math.Ceiling(num2));
             Console.ReadKey();
 
         }
